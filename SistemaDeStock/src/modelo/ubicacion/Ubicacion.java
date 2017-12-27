@@ -9,6 +9,8 @@ package modelo.ubicacion;
  *
  * @author gonzalo
  */
-public class Ubicacion {
+public abstract class Ubicacion {
+    private int id;
+    private String nombre;
     
 }
