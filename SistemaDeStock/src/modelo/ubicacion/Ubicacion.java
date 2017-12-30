@@ -5,6 +5,8 @@
  */
 package modelo.ubicacion;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author gonzalo
@@ -12,5 +14,9 @@ package modelo.ubicacion;
 public abstract class Ubicacion {
     private int id;
     private String nombre;
+    protected ArrayList<Ubicacion> ubicacion = new ArrayList<Ubicacion>();
     
+    public void add(Ubicacion u){
+        this.ubicacion.add(u);
+    }
 }
